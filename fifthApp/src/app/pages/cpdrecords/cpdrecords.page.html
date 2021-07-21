@@ -10,5 +10,48 @@
 </ion-header>
 
 <ion-content>
+  <div class="action-button">
+    <ion-button><ion-icon slot="start" name="add"></ion-icon>ADD</ion-button>
+  </div>
+  <h3 style="margin-left: 10px;">All Records</h3>
+  <form>
+    <label for="status" style="font-size: 15px;margin-left: 10px;">Filter:</label>
+    <select id="status" name="status"  placeholder="Status" style="background-color: #fff; font-size: 15px;">
+      <option value="accepted">Accepted</option>
+      <option value="pending">Pending</option>
+      <option value="reject">Reject</option>
+    </select>
+  </form>
+  
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <!-- <ion-card-subtitle>Number of Viewers per season for</ion-card-subtitle> -->
+    </ion-card-header>
+    <ion-card-content>
+      <h2 style="color: black;">Workshop for University student about Flutter</h2> 
+      <p style="margin-top: 0px;">University of Colombo</p> 
+      <p style="margin-top: 0px; color:cornflowerblue;">Accepted</p>    
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <!-- <ion-card-subtitle>Number of Viewers per season for</ion-card-subtitle> -->
+    </ion-card-header>
+    <ion-card-content>
+      <h2 style="color: black;">Html , CSS and Javascript Certificate course</h2> 
+      <p style="margin-top: 0px; ">Coursera</p> 
+      <p style="margin-top: 0px; color:#ffc409;">Pending</p> 
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <!-- <ion-card-subtitle>Number of Viewers per season for</ion-card-subtitle> -->
+    </ion-card-header>
+    <ion-card-content>
+      <h2 style="color: black;">Workshop for kids about Self Motivation</h2> 
+      <p style="margin-top: 0px; ">Gurukula Vidyalaya,Kelaniya</p> 
+      <p style="margin-top: 0px; color:#ff0000;">Reject</p> 
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
