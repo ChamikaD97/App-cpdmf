@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "fifthApp",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

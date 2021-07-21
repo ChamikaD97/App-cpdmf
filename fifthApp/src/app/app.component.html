@@ -1,0 +1,76 @@
+<ion-app>
+  <ion-menu menuId="main-menu" contentId="main" side="start">
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+        <img src="../assets/profile.jpeg" alt="profile">
+          <ion-label>
+            <h2>Jihani Nanayakkara</h2>
+            <p>Professional</p>
+          <div class="action-button">
+            <ion-button><ion-icon slot="start" name="person-circle-outline"></ion-icon>View Profile</ion-button>
+        </div>
+      </ion-label>
+      </div>
+      <!-- <ion-list *ngFor="let pages of navigate" class="menu-items" lines="none">
+        <ion-menu-toggle auto-hide="true">
+          <ion-item [routerLink]="pages.url" routerDirection="forward">
+              <ion-icon [name]="pages.icon" slot="start"></ion-icon>
+                <ion-label>{{pages.title}}</ion-label>  
+          </ion-item>
+        </ion-menu-toggle>
+        </ion-list> -->
+      <ion-list class="menu-items" lines="none" >
+        <ion-menu-toggle auto-hide="true"> 
+          <ion-menu-toggle>
+            <ion-item routerLink="/dashboard">
+              <ion-icon  name="grid-outline" slot="start"></ion-icon>Dashboard
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <ion-item routerLink="/cpdrecords">
+              <ion-icon  name="trophy-outline" slot="start"></ion-icon>CPD Records
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <ion-item class="active" routerLink="/courses">
+              <ion-icon name="school-outline" slot="start"></ion-icon>Courses
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <ion-item routerLink="/workshop">
+              <ion-icon  name="bar-chart-outline" slot="start"></ion-icon>Workshops
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <ion-item routerLink="/blogs">
+              <ion-icon  name="newspaper-outline" slot="start"></ion-icon>Blogs
+            </ion-item > 
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <ion-item routerLink="/forum">
+              <ion-icon  name="chatbubbles-outline" slot="start"></ion-icon>Forums
+            </ion-item>
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <ion-item routerLink="/reports">
+              <ion-icon  name="reader-outline" slot="start"></ion-icon>Reports
+            </ion-item> 
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <ion-item routerLink="/payments">
+              <ion-icon  name="pricetag-outline" slot="start"></ion-icon>Payments
+            </ion-item> 
+          </ion-menu-toggle>
+          <ion-menu-toggle>
+            <ion-item routerLink="/jobs">
+              <ion-icon  name="accessibility-outline" slot="start"></ion-icon>Jobs
+            </ion-item>  
+          </ion-menu-toggle> 
+        </ion-menu-toggle>
+      </ion-list> 
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main">
+  </ion-router-outlet>
+</ion-app>

@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  >
+  
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+  <!-- <form action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <img src="assets/login.jpg" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+      <label for="uname"><b>Member ID</b></label>
+      <input type="text" placeholder="Enter Member ID" [(ngmodule)]="memberId" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" [(ngmodule)]="password" required>
+        
+      <button type="submit" onclick="tryLogin()">Login</button>
+      
+    </div>   
+  </form> -->
+  <div id="header">
+    <div class="imgcontainer">
+      <img src="assets/login.jpg" class="avatar"/>
+    </div> 
+  </div>
+  <form class="form" style="margin-left: 10px; margin-right: 10px;">
+    <ion-label>Member Id :</ion-label><br/>
+    <ion-item >
+      <ion-input type="text" placeholder="Enter MemberId" name="memberId"></ion-input>
+    </ion-item>
+    <ion-label>Password :</ion-label><br/>
+    <ion-item >
+      <ion-input type="password" placeholder="Enter password" name="password"></ion-input>
+    </ion-item>
+    <ion-button (click)="tryLogin()" expand="block" shape="round">
+      Login
+    </ion-button>
+  </form>
+  <span class="psw"><a href="#">Forgot password?</a></span>
+  <br/>
+  <span class="signup">Haven't an account ?<a href="https://www.cssl.lk/membership/">Sign Up</a></span>
+</ion-content>

@@ -1,0 +1,10 @@
+{
+  "name": "fifthApp",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}
