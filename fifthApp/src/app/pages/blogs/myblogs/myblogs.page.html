@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Blogs</ion-title>
+    <ion-title>My Blogs</ion-title>
     <ion-buttons slot="start">
       <ion-menu-button menu="main-menu">
 
@@ -10,14 +10,17 @@
 </ion-header>
 
 <ion-content>
-  <h2 style="margin-top: 60px; margin-left: 10px;">Blogs</h2>
-  <ion-card class="welcome-card" >
+  <div class="action-button" style=" margin-top: 60px;">
+    <ion-button><ion-icon slot="start" name="add"></ion-icon>NEW BLOG</ion-button>
+  </div>
+  <h1 style="margin-top: 20px;">My Blog List</h1>
+  <ion-card class="welcome-card">
     <ion-card-header>
       <!-- <ion-card-subtitle>Number of Viewers per season for</ion-card-subtitle> -->
     </ion-card-header>
     <ion-card-content>
-      <h2 style=" color: black; font-weight: bold;">Lifestyle and interior design, design tips, DIY how-tos, shopping guides.</h2> 
-      <p style="margin-top: 0px;">Dr. Banuka Perera</p> 
+      <h2 style="color: black; font-weight: bold;">Game reviews, interviews, gaming gear</h2> 
+      
     </ion-card-content>
   </ion-card>
   <ion-card class="welcome-card">
@@ -25,17 +28,10 @@
       <!-- <ion-card-subtitle>Number of Viewers per season for</ion-card-subtitle> -->
     </ion-card-header>
     <ion-card-content>
-      <h2 style="color: black;font-weight: bold;">Family, travel, food, lifestyle, DIY</h2> 
-      <p style="margin-top: 0px; ">Dr.N.B.Thushar</p> 
-    </ion-card-content>
-  </ion-card>
-  <ion-card class="welcome-card">
-    <ion-card-header>
-      <!-- <ion-card-subtitle>Number of Viewers per season for</ion-card-subtitle> -->
-    </ion-card-header>
-    <ion-card-content>
-      <h2 style="color: black; font-weight: bold;">Style, design, food, motherhood, travel, relationshipsp</h2> 
-      <p style="margin-top: 0px; ">Dr. L.K.Weerarathna</p> 
+      
+      <h2 style="color: black; font-weight: bold;">education, learning, critical thinking, technology</h2> 
+     
+      
     </ion-card-content>
   </ion-card>
   <ion-tabs>
@@ -48,7 +44,7 @@
   
       <ion-tab-button tab="myblogs">
         <ion-icon name="clipboard-outline"></ion-icon>
-        <ion-label>My Blogs</ion-label>
+        <ion-label>My Blog</ion-label>
       </ion-tab-button>
     </ion-tab-bar>
   </ion-tabs>
